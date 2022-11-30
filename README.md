@@ -1,6 +1,6 @@
 # Welcome to my Website README page
 
-# [My Website](http://www.dazl.ie)
+# [My Website](https://www.dazl.ie)
 
 Hi! My name is Graham. In this README page were you will find out a little about me, my website, my coding journey, my projects and who has influenced me in my development.
 
