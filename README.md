@@ -1,6 +1,6 @@
 # Welcome to my Website README page
 
-# [My Website](http://www.dazl.ie)
+# [My Website](https://www.dazl.ie)
 
 <ul class="navlist">
                 <li><a href="#about">About Me</a></li>
