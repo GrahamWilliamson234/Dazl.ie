@@ -8,14 +8,20 @@
     scroll-behavior: smooth;
     scroll-padding-top: 3rem;
 }
+.lang_logo img{
+    height:80px;
+    width: 80px;
+    margin: 10px;
+
+}
 :root{
     --bg-color: #ffffff;
     --second-bg-color: #f9f9f9;
     --text-color: #fff;
     --second-color: #161616;
-    --main-color: #FF7A00;
+    --main-color: #899dba;
     --other-color: #6a6a6a;
-    --big-font: 5.7rem;
+    --big-font: 6.7rem;
     --h2-font: 3.8rem;
     --p-font: 1rem;
 }
@@ -40,11 +46,12 @@ header{
 .logo{
     font-size: 1.9rem;
     font-weight: 600;
-    color: var(--main-color);
+    color: white;
+    cursor: no-drop;
 }
 span{
-    color: var(--main-color);
-    text-shadow: 4px 4px black;
+    color: white;
+    text-shadow: 4px 8px var(--main-color);
 }
 .navlist{
     display: flex;
@@ -66,7 +73,7 @@ span{
     background: var(--main-color);
     left: 0;
     bottom: -4px;
-    transition: eaes .40s;
+    transition: eaes .20s;
 }
 .navlist a:hover::after{
     width: 100%;
@@ -83,12 +90,13 @@ span{
     font-weight: 500;
     padding: 8px 26px;
     border: 2px solid transparent;
-    transition: ease .40s;
+    transition: ease .20s;
 }
 .h-btn .sign-in{
     color: var(--text-color);
     background: var(--main-color);
     border-radius: 30px;
+    cursor: help;
 }
 .h-btn .sign-in:hover{
     background: transparent;
@@ -98,7 +106,7 @@ section{
     padding: 120px 16%;
 }
 .home{
-    background-image: url(../img/main.jpg);
+    background-image: url(../img/macbook.jpg);
     background-size: cover;
     background-position: center;
     height: 100vh;
@@ -121,7 +129,7 @@ section{
 }
 .home-text h4{
     color: var(--text-color);
-    font-size: 1.0rem;
+    font-size: 2.4rem;
     line-height: 1.21;
     font-weight: 700;
     margin-bottom: 15px;
@@ -146,28 +154,31 @@ section{
 }
 .about{
     background: var(--bg-color);
-    display: grid;
+    display: block;
     grid-template-columns: repeat(2, 2fr);
     align-items: center;
-    grid-gap: 2rem;
+    grid-gap: 1rem;
 }
 .about-img img{
-    max-width: 100%;
-    width: 490px;
-    height: auto;
+    float: right;
+    max-width: 50%;
+    width: 500px;
     border-radius: 50%;
+}
+.about-text{
+    padding-left: 50px;
+    padding-top: -150px;
 }
 .about-text h2{
     font-size: var(--h2-font);
     color: var(--second-color);
     font-weight: 700;
     line-height: 1.2;
-    margin-bottom: 1.2rem;
 }
 .about-text h5{
     color: var(--second-color);
     font-size: 1.3rem;
-    margin-bottom: 20px;
+    margin-bottom: 50px;
     letter-spacing: 2px;
     text-shadow: 0 0 5px #a25c1f;
 }
@@ -207,7 +218,7 @@ section{
 }
 .services-content{
     display: grid;
-    grid-template-columns: repeat(auto-fit, minmax(250px, auto));
+    grid-template-columns: repeat(auto-fit, minmax(280px, auto));
     grid-gap: 2rem;
     align-items: center;
     margin-top: 4.4rem;
@@ -221,11 +232,11 @@ section{
 }
 .box i{
     color: var(--main-color);
-    font-size: 2.8rem;
+    font-size: 1.8rem;
     margin-bottom: 18px;
 }
 .box h3{
-    font-size: 22px;
+    font-size: 30px;
     font-weight: 600;
     margin-bottom: 15px;
     color: var(--second-color);
@@ -236,11 +247,11 @@ section{
     line-height: 30px;
 }
 .box:hover{
-    box-shadow: 0px 20px 30px rgb(55 7 23 / 30%);
+    box-shadow: 0px 40px 60px rgb(55 7 23 / 80%);
 }
 .portfolio-content{
     display: grid;
-    grid-template-columns: repeat(auto-fit, minmax(220px, auto));
+    grid-template-columns: repeat(auto-fit, minmax(250px, auto));
     grid-gap: 2rem;
     align-items: center;
     text-align: center;
@@ -252,26 +263,28 @@ section{
 }
 .col img{
     max-width: 100%;
-    width: 620px;
+    width: 420px;
     height: auto;
+    border-radius: 5%;
+
 }
 .layer{
     background: transparent;
     height: 100%;
     width: 100%;
     position: absolute;
-    border-radius: 10px;
+    border-radius: 20px;
     top: 0;
     left: 0;
     transition: all .35s;
 }
 .layer:hover{
-    background: linear-gradient(rgba(22,22,22, 0.06) 0%, #9f0036 100%);
+    background: linear-gradient(rgba(20,20,20, 0.06) 0%, grey 100%);
 }
 .layer h3{
     position: absolute;
     width: 100%;
-    font-size: 1.4rem;
+    font-size: 1.6rem;
     font-weight: 500;
     color: var(--text-color);
     bottom: 0;
@@ -282,7 +295,7 @@ section{
 }
 .layer:hover h3{
     bottom: 49%;
-    opacity: 1;
+    opacity: 10;
 }
 
 .blog{
@@ -301,7 +314,7 @@ section{
 .blog-content .row img{
     max-width: 100%;
     width: 600px;
-    height: auto;
+    height: 300px;
 }
 
 .row{
@@ -312,10 +325,10 @@ section{
 }
 
 .row p{
-    font-size: 14px;
+    font-size: 15px;
     font-weight: 500;
     color: var(--other-color);
-    margin: 10px 0px 8px 25px;
+    margin: 10px 8px 8px 25px;
 }
 
 .row h3{
@@ -323,7 +336,7 @@ section{
     line-height: 1.45;
     font-weight: 600;
     transition: all .35s;
-    margin: 10px 0px 8px 25px;
+    margin: 10px 10px 8px 14px;
     color: var(--second-color);
 }
 .row h3:hover{
@@ -343,7 +356,7 @@ section{
     color: var(--main-color);
 }
 .row:hover{
-    box-shadow: 0px 20px 30px rgb(55 7 23 / 30%);
+    box-shadow: 0px 30px 50px rgb(55 7 23 / 90%);
 }
 .contact{
     background: #161616;
@@ -375,6 +388,11 @@ section{
     padding: 8px 20px;
     border-radius: 30px;
 }
+.contact .newsletter:hover{
+    background: transparent;
+    border: 0px solid black;
+}
+
 .copyright{
     background: var(--bg-color);
     padding: 20px 30px;
@@ -397,12 +415,13 @@ section{
     height: 45px;
     margin: 0px 5px;
     color: var(--text-color);
-    font-size: 2.8rem;
+    font-size: 3.5rem;
     border-radius: 50%;
     transition: all .40s;
 }
 .icon a:hover{
     transform: translateY(-10px);
+    cursor: crosshair;
 }
 
 @media (max-width: 1380px){
@@ -468,7 +487,7 @@ section{
         top: 100%;
     }
 }
-@media (max-width: 770px){
+@media (max-width: 800px){
     .about{
         grid-template-columns: 1fr;
     }
@@ -492,10 +511,9 @@ section{
 }
 @media (max-width: 750px){
     :root{
-        --big-font: 3.5rem;
+        --big-font: 4.2rem;
         --h2-font: 1.9rem;
         --p-font: 0.9rem;
-
     }
 }
 @media (max-width: 630px){
@@ -503,15 +521,15 @@ section{
         padding: 90px 4%;
     }
     header{
-        padding: 14px 4%;
+        padding: 10px 5%;
     }
     :root{
-        --big-font: 3.2rem;
+        --big-font: 3.9rem;
         --h2-font: 1.8rem;
         --p-font: 0.9rem;
     }
     .home-text h4{
-        font-size: 1.2rem;
+        font-size: 2.0rem;
     }
     .count li{
         margin-bottom: 20px;
@@ -520,4 +538,79 @@ section{
     .count span{
         font-size: 1.2rem;
     }
+    .lang_logo img{
+        height: 50px;
+        width: 50px;
+        margin: 10px;
+    }
+    span{
+        color: var(--main-color);
+        text-shadow: 2px 5px var(--second-color);
+    }
+    .about-img img{
+        max-width: 100%;
+        width: 490px;
+        height: auto;
+        border-radius: 50%;
+        margin-bottom: 30px;
+        margin-left: 0px;
+    }
+    .about-text{
+        margin: 0px 25px 0px 0px;
+    }
+    .icon a{
+        width: 38px;
+        height: 38px;
+        font-size: 2.8rem;
+}
+}
+@media (max-width: 500px){
+    section{
+        padding: 70px 4%;
+    }
+    header{
+        padding: 6px 5%;
+    }
+    :root{
+        --big-font: 2.8rem;
+        --h2-font: 1.4rem;
+        --p-font: 0.9rem;
+    }
+    .home-text h4{
+        font-size: 2.0rem;
+    }
+    .count li{
+        margin-bottom: 16px;
+        font-size: 1rem;
+    }
+    .logo{
+        font-size: 1.4rem;
+    }
+    .h-btn{
+        padding: 2px, 10px;
+        font-size: 15px;
+        margin: 10px;
+    }
+    .icon a{
+        width: 32px;
+        height: 32px;
+        font-size: 2.8rem;
+}
+}
+@media (max-width: 320px){
+    .icon a{
+        width: 28px;
+        height: 28px;
+}
+    .logo{
+        font-size: 1.2rem;
+}
+    .home{
+        height: 100vh;
+        width: 100%;
+        position: relative;
+        display: grid;
+        grid-template-columns: repeat(1, 1fr);
+        align-items: center;
+}
 }
